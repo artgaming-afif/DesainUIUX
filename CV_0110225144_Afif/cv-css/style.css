@@ -1,0 +1,61 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+}
+
+.cv-container {
+  max-width: 800px;
+  background: white;
+  margin: 30px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+}
+
+.profile {
+  background: #0078d7;
+  color: white;
+  width: 35%;
+  text-align: center;
+  padding: 20px;
+}
+
+.profile img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border: 3px solid white;
+}
+
+.content {
+  width: 65%;
+  padding: 20px;
+}
+
+h2 {
+  border-bottom: 2px solid #000;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.info p {
+  margin: 5px 0;
+}
+
+/* Responsif untuk HP */
+@media (max-width: 600px) {
+  .cv-container {
+    flex-direction: column;
+  }
+
+  .profile, .content {
+    width: 100%;
+  }
+}
