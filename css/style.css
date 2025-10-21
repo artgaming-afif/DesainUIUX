@@ -1,0 +1,132 @@
+/* RESET dasar */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #333;
+}
+
+/* Bagian atas (header) pakai grid: foto, biodata, kategori */
+.header {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr; /* 3 kolom: foto - info - kategori */
+  gap: 20px;
+  padding: 20px;
+  background: #fff;
+}
+
+/* Foto profil */
+.profile-photo img {
+  width: 100%;
+  max-width: 150px;
+  border-radius: 5px;
+  object-fit: cover;
+  border: 2px solid #ccc;
+}
+
+/* Info biodata */
+.profile-info h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.profile-info a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+.profile-info a:hover {
+  text-decoration: underline;
+}
+
+/* Kategori */
+.profile-category {
+  text-align: right;
+}
+
+.profile-category ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.profile-category li {
+  font-size: 14px;
+}
+
+/* Garis pemisah */
+hr {
+  border: none;
+  border-top: 2px solid #ccc;
+  margin: 20px 0;
+}
+
+/* Bagian Tengah: Deskripsi */
+.content {
+  padding: 0 20px;
+  background: #fff;
+  text-align: justify;
+}
+
+.attachments {
+  display: grid;
+  grid-template-columns: 1fr 1fr 0.2fr;
+  gap: 20px;
+  padding: 20px;
+  background: #fff;
+  margin-top: 20px;
+}
+
+.video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.video-container {
+  width: 100%;
+  height: 290px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.links a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
