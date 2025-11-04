@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #eeeeee;
+  font-family: Arial, sans-serif;
+}
+
+.wrap {
+  width: 720px;
+  margin: 30px auto;
+  border: 3px solid #999999;
+  background: #ffffff;
+  padding: 10px;
+}
+
+.judul {
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.kuning {
+  float: left;
+  width: 130px;
+  height: 50px;
+  background: yellow;
+  border: 2px solid #cccc00;
+  margin-right: 10px;
+}
+
+.merah {
+  float: left;
+  width: 550px;
+  height: 50px;
+  background: red;
+  border: 2px solid #990000;
+}
+
+.artikel {
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.sidebar-kiri {
+  float: left;
+  width: 140px;
+  height: 300px;
+  background: lightgreen;
+  border: 2px solid #669966;
+  margin-right: 10px;
+}
+
+.konten {
+  float: left;
+  width: 380px;
+  height: 300px;
+  background: lightgray;
+  border: 2px solid #888888;
+  margin-right: 10px;
+}
+
+.sidebar-kanan {
+  float: left;
+  width: 140px;
+  height: 300px;
+  background: cyan;
+  border: 2px solid #009999;
+}
+
+.penutup {
+  clear: both;
+  height: 40px;
+  background: blue;
+  border: 2px solid #000099;
+}
