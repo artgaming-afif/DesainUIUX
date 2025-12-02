@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Soal 4 - Penjumlahan</title>
+</head>
+<body>
+
+<h2>Menjumlahkan Dua Bilangan</h2>
+
+<input type="number" id="a" onChange="hitungJumlah()" placeholder="Angka 1">
++
+<input type="number" id="b" onChange="hitungJumlah()" placeholder="Angka 2">
+=
+<input type="text" id="hasil" readonly>
+
+<script>
+function hitungJumlah() {
+    let x = parseFloat(document.getElementById("a").value) || 0;
+    let y = parseFloat(document.getElementById("b").value) || 0;
+    document.getElementById("hasil").value = x + y;
+}
+</script>
+
+</body>
+</html>

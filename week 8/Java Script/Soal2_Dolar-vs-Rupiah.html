@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Soal 2 - Kurs Rupiah & Dollar</title>
+</head>
+<body>
+
+<h2>Menghitung Kurs Rupiah & Dollar</h2>
+
+<h3>Rupiah → Dollar</h3>
+<input type="number" id="rupiah" placeholder="Masukkan rupiah">
+<button onclick="rupiahKeDollar()">Konversi</button>
+<p id="hasilRupiah"></p>
+
+<hr>
+
+<h3>Dollar → Rupiah</h3>
+<input type="number" id="dollar" placeholder="Masukkan dollar">
+<button onclick="dollarKeRupiah()">Konversi</button>
+<p id="hasilDollar"></p>
+
+<script>
+const KURS = 14650; // nilai 1 dollar
+
+function rupiahKeDollar() {
+    let rp = document.getElementById("rupiah").value;
+    let hasil = rp / KURS;
+
+    document.getElementById("hasilRupiah").innerHTML =
+        "Hasil: $" + hasil.toFixed(3);
+}
+
+function dollarKeRupiah() {
+    let dl = document.getElementById("dollar").value;
+    let hasil = dl * KURS;
+
+    document.getElementById("hasilDollar").innerHTML =
+        "Hasil: Rp " + hasil.toLocaleString("id-ID");
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Soal 3 - Parkir</title>
+</head>
+<body>
+
+<h2>Menghitung Biaya Parkir</h2>
+
+Jam Masuk: <input type="number" id="masuk"><br><br>
+Jam Keluar: <input type="number" id="keluar"><br><br>
+
+<button onclick="hitungParkir()">Hitung</button>
+
+<p id="hasil"></p>
+
+<script>
+function hitungParkir() {
+    let masuk = parseInt(document.getElementById("masuk").value);
+    let keluar = parseInt(document.getElementById("keluar").value);
+    let lama = keluar - masuk;
+
+    let biaya = 0;
+
+    if (lama <= 2) {
+        biaya = 3000;
+    } else {
+        biaya = 3000 + (lama - 2) * 1000;
+    }
+
+    document.getElementById("hasil").innerHTML =
+        "Lama: " + lama + " jam<br>Biaya: Rp " + biaya;
+}
+</script>
+
+</body>
+</html>
+
