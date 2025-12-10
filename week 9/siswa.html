@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let nilaisiswa = {
+            nim : "0110225144",
+            nama : "Rizki Aditya Pratama",
+            matkul : "Desain UI/UX",
+            nilai : 85,
+            hasil : function(){
+                if (this.nilai >= 65){
+                    return "Lulus";
+                } else {
+                    return "Tidak Lulus";
+                }
+            }
+        }
+
+        console.log("nama siswa : " + nilaisiswa.nama);
+        console.log("mata kuliah : " + nilaisiswa.matkul);
+        console.log("nilai : " + nilaisiswa.nilai);
+        console.log("hasil : " + nilaisiswa.hasil());
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

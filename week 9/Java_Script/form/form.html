@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Validation</title>
+    <script src="validate.js"></script>
+    <style>
+        .error {
+            color: red;
+            font-size: 14px;
+        }
+        .input-error {
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Form Pemesanan Tiket</h2>
+
+    <form onsubmit="return validateForm()">
+
+        <label>Nama Pelanggan</label><br>
+        <input type="text" id="nama"><br>
+        <span id="err_nama" class="error"></span><br><br>
+
+        <label>Email</label><br>
+        <input type="text" id="email"><br>
+        <span id="err_email" class="error"></span><br><br>
+
+        <label>Jam Keberangkatan (00.00 - 23.59)</label><br>
+        <input type="text" id="jam"><br>
+        <span id="err_jam" class="error"></span><br><br>
+
+        <label>Tujuan Keberangkatan</label><br>
+        <input type="text" id="tujuan"><br>
+        <span id="err_tujuan" class="error"></span><br><br>
+
+        <label>Jumlah Tiket (1–10)</label><br>
+        <input type="number" id="tiket"><br>
+        <span id="err_tiket" class="error"></span><br><br>
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+    <br><br>
+
+    <div id="hasil"></div>
+
+</body>
+</html>

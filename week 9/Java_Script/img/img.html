@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Picker</title>
+
+    <script>
+        function tampilGambar() {
+            let pilih = document.getElementById("pilihGambar").value;
+
+            if (pilih === "") return;
+
+            document.getElementById("imgPreview").src = "image/" + pilih;
+
+            alert("Nama file: " + pilih);
+        }
+    </script>
+
+</head>
+<body>
+
+    <h2>Image Picker</h2>
+
+    <select id="pilihGambar" onchange="tampilGambar()">
+        <option value="">-- Pilih Gambar --</option>
+        <option value="gambar1.jpg">Gambar 1</option>
+        <option value="gambar2.jpg">Gambar 2</option>
+        <option value="gambar3.webp">Gambar 3</option>
+    </select>
+
+    <br><br>
+
+    <img id="imgPreview" src="" width="300">
+
+</body>
+</html>

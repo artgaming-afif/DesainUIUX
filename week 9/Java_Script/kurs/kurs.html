@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Kurs Rupiah</title>
+
+    <script>
+        function hitungKurs() {
+            let nilaiAsing = document.getElementById("nilai").value;
+            let valas = document.getElementById("valas").value;
+            let hasil = 0;
+
+            if (nilaiAsing === "" || isNaN(nilaiAsing)) {
+                alert("Masukkan nilai mata uang asing!");
+                return;
+            }
+
+            switch (valas) {
+                case "usd": hasil = nilaiAsing * 9915; break;
+                case "sgd": hasil = nilaiAsing * 13472; break;
+                case "myr": hasil = nilaiAsing * 874; break;
+                case "jpy": hasil = nilaiAsing * 120; break;
+                case "eur": hasil = nilaiAsing * 15888; break;
+                case "sar": hasil = nilaiAsing * 3592; break;
+            }
+
+            document.getElementById("rupiah").value = hasil;
+        }
+    </script>
+</head>
+
+<body>
+
+    <h2>Kurs Rupiah</h2>
+
+    <form>
+        Nilai Mata Uang Asing:  
+        <input type="text" id="nilai"> <br><br>
+
+        Pilih Valas:
+        <select id="valas" onchange="hitungKurs()">
+            <option value="usd">Dollar US</option>
+            <option value="sgd">Dollar Singapore</option>
+            <option value="myr">Ringgit Malaysia</option>
+            <option value="jpy">Yen Jepang</option>
+            <option value="eur">Euro</option>
+            <option value="sar">Riyal Arab Saudi</option>
+        </select>
+
+        <br><br>
+
+        Nilai Rupiah:
+        <input type="text" id="rupiah" readonly>
+    </form>
+
+</body>
+</html>
