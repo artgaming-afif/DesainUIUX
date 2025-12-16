@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Peserta</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">
+                <img src="assets/logo-social.png" alt="Bootstrap" width="30" height="24" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="registrasi.html">Registrasi Seminar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="peserta.html">Registrasi Peserta</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="datatabel.html">Daftar Peserta</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-outline-success" type="submit">
+                        Search
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Table -->
+    <div class="card">
+        <div class="card-header">
+            <h4>Daftar Peserta Seminar</h4>
+            <div class="card-body">
+                <table class="table table-success table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">NO</th>
+                            <th scope="col">Nama</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">No. HP</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Ahmad Afifi</td>
+                            <td>ahmadafifi757@gmail.com</td>
+                            <td>0814-1239-9478</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Art Gaming</td>
+                            <td>artgaming@gmail.com</td>
+                            <td>0812-3456-7890</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Mad Giming</td>
+                            <td>madgiming@gmail.com</td>
+                            <td>0813-4567-8901</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Secret Terces</td>
+                            <td>secreterces@gmail.com</td>
+                            <td>0813-4567-8902</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>Orang Baik</td>
+                            <td>orangbaik@gmail.com</td>
+                            <td>0813-4567-8904</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>Talon Baik</td>
+                            <td>talonbaik@gmail.com</td>
+                            <td>0813-4567-8903</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- End Table -->
+        <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
